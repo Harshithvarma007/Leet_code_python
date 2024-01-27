@@ -24,15 +24,3 @@ class Solution(object):
         return dummy.next
         
         
-
-# Example usage:
-# Create a linked list: 1 -> 2 -> 3 -> 4 -> 5
-head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-
-# Remove the 2nd node from the end
-new_head = removeNthFromEnd(head, 2)
-
-# Print the result: 1 -> 2 -> 3 -> 5
-while new_head:
-    print(new_head.val, end=" -> ")
-    new_head = new_head.next
